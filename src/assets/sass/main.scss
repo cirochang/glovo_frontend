@@ -1,9 +1,11 @@
+html {
+	background-color: lighten(black, 12);
+}
 body {
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	flex-flow: column wrap;
-	background: lighten(black, 12);
 	color: white;
 	font-family: 'Lato';
 	-webkit-font-smoothing: antialiased;
