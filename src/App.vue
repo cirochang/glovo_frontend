@@ -64,8 +64,12 @@ export default {
     },
   },
   async beforeMount() {
-    const response = await GLOVO_API.getProducts();
-    this.products = response.data;
+    try {
+      const response = await GLOVO_API.getProducts();
+      this.products = response.data;
+    } catch (e) {
+      console.error(e);
+    }
   },
   methods: {
     isMinPrice(price) {
